@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 
+Agenda MS 2018 
+Desenvolvido por: Marcos Willian de Souza 
+excluir.html - Pagina de confirmação de exclusão Agenda MS 
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="styles/style-agendams-global-css.css"/>
+		<link rel="stylesheet" href="styles/style-agendams-global-menu-sup-css.css"/>
+		<link rel="stylesheet" href="styles/style-agendams-formulario-css.css"/>
+		<title>Agenda MS :: Excluir</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<div id="link_topo">
+					<a href="sair.html">Logout</a><a href="conta.html">Conta</a>
+				</div>
+				<img id="logo" src="img/logo-agenda-ms.png" />
+			</div>
+			<div id="body">
+				<div id="formulario">
+					<h1>Excluir</h1>
+					<h3>Excluir Contato</h3>
+					<label class="contato">Nome: {?}</label>
+					<label class="contato">CPF: {?}</label>
+					<label class="contato">Telefone: {?}</label>
+					<label class="contato">Celular: {?}</label>
+					<label class="contato">E-mail: {?}</label>
+					<label class="contato">Site: {?}</label><br />
+					<input type="submit" name="Excluir" id="excluir" class="btn-contato" value="Excluir" /> &nbsp 
+					<input type="button" name="Voltar" id="voltar" class="btn-contato" value="Voltar" onclick="location. href='contatos.html'"/>
+				</div>
+			</div>
+			<div id="footer">
+				<small>Agenda MS - 2018</small><br />
+				<small>Desenvolvido por: Marcos Willian de Souza</small>
+			</div>
+		</div>
+	</body>
+</html>

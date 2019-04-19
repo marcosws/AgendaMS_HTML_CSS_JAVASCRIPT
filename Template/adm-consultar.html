@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- 
+Agenda MS 2018 
+Desenvolvido por: Marcos Willian de Souza 
+adm-consultar.html - Pagina Administrativa de consulta de usuário Agenda MS 
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="styles/style-agendams-global-css.css"/>
+		<link rel="stylesheet" href="styles/style-agendams-global-menu-sup-css.css"/>
+		<link rel="stylesheet" href="styles/style-agendams-formulario-css.css"/>
+		<title>Agenda MS :: Adm:Consultar</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<div id="link_topo">
+					<a href="sair.html">Logout</a><a href="conta.html">Conta</a>
+				</div>
+				<img id="logo" src="img/logo-agenda-ms-adm.png" />
+			</div>
+			<div id="body">
+				<div id="formulario">
+					<h1>Administração</h1>
+					<h3>Consulta Usuário</h3>
+					<label class="usuario">ID: {?}</label>
+					<label class="usuario">Nome: {?}</label>
+					<label class="usuario">Login: {?}</label>
+					<label class="usuario">Tipo de Conta: {?}</label>
+					<label class="usuario">Total de contatos cadastrados pelo usuário: {?}</label><br />
+					<input type="button" name="Voltar" id="voltar" class="btn-contato" value="Voltar" onclick="location. href='adm.html'"/>
+				</div>
+			</div>
+			<div id="footer">
+				<small>Agenda MS - 2018</small><br />
+				<small>Desenvolvido por: Marcos Willian de Souza</small>
+			</div>
+		</div>
+	</body>
+</html>

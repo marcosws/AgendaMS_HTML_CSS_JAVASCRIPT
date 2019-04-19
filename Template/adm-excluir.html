@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- 
+Agenda MS 2018 
+Desenvolvido por: Marcos Willian de Souza 
+adm-excluir.html - Pagina Administrativa de exclusão de usuário Agenda MS 
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="styles/style-agendams-global-css.css"/>
+		<link rel="stylesheet" href="styles/style-agendams-global-menu-sup-css.css"/>
+		<link rel="stylesheet" href="styles/style-agendams-formulario-css.css"/>
+		<title>Agenda MS :: Adm:Excluir</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<div id="link_topo">
+					<a href="sair.html">Logout</a><a href="conta.html">Conta</a>
+				</div>
+				<img id="logo" src="img/logo-agenda-ms-adm.png" />
+			</div>
+			<div id="body">
+				<div id="formulario">
+					<h1>Administração</h1>
+					<h3>Excluir Usuário</h3>
+					<form id="form1" class="form" method="post" action="adm.html">
+						<label class="usuario">ID: {?}</label>
+						<label class="usuario">Nome: {?}</label>
+						<label class="usuario">Login: {?}</label>
+						<label class="usuario">Tipo de Conta: {?}</label>
+						<label class="usuario">Total de contatos cadastrados pelo usuário: {?}</label><br />
+						<input type="submit" name="Excluir" id="excluir" class="btn-usuario" value="Excluir" /> &nbsp 
+						<input type="button" name="Voltar" id="voltar" class="btn-usuario" value="Voltar" onclick="location. href='adm.html'"/>
+					</form>
+				</div>
+			</div>
+			<div id="footer">
+				<small>Agenda MS - 2018</small><br />
+				<small>Desenvolvido por: Marcos Willian de Souza</small>
+			</div>
+		</div>
+	</body>
+</html>

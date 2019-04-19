@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- 
+Agenda MS 2018 
+Desenvolvido por: Marcos Willian de Souza 
+conta.html - Pagina de conta de usuário da Agenda MS 
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="styles/style-agendams-global-css.css"/>
+		<link rel="stylesheet" href="styles/style-agendams-global-menu-sup-css.css"/>
+		<link rel="stylesheet" href="styles/style-agendams-formulario-css.css"/>
+		<link rel="stylesheet" href="styles/style-agendams-formulario-radio-css.css"/>
+		<script src="scripts/script-agendams-formulario-radio-js.js"></script>
+		<script src="scripts/script-agendams-conta-js.js"></script>
+		<title>Agenda MS :: Conta</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<div id="link_topo">
+					<a href="sair.html">Logout</a><a href="home.html">Home</a>
+				</div>
+				<img id="logo" src="img/logo-agenda-ms.png" />
+			</div>
+			<div id="body">
+				<div id="formulario">
+					<label id="status" class="lbStatus"></label><!-- Senha Inválida! -->
+					<h1>Conta de Usuário</h1>
+					<h3>Manutenção Conta de Usuário</h3>
+					<label class="usuario">Nome: {?}</label>
+					<label class="usuario">Login: {?}</label>
+					<br />
+					<fieldset class="groupbox" id="groupbox1">
+						<legend>Operação:</legend>
+						<input type="radio" name="alteracao" class="radiobutton" value="AlterarNome" id="opnome" onclick="operacao();" checked>Alterar Nome</input>
+						<input type="radio" name="alteracao" class="radiobutton" value="AlterarSenha" id="opsenha"  onclick="operacao();" >Alterar Senha</input>
+						<input type="radio" name="alteracao" class="radiobutton" value="ExcluirConta" id="opexcluir"  onclick="operacao();" >Excluir Conta</input>
+					</fieldset> &nbsp 
+					<form id="form1" class="form" method="post" action="usuarios.html" onSubmit="return validaFormulario()">
+						<label for="nome" class="usuario">Nome:</label>
+						<input type="text" name="Nome" id="nome" class="usuario" /><br />
+						<input type="submit" name="Alterar" id="alterar" class="btn-usuario" value="Alterar" /> &nbsp 
+						<input type="button" name="Voltar" id="voltar" class="btn-usuario" value="Voltar" onclick="location. href='home.html'"/>
+					</form>
+					<form id="form2" class="form" method="post" action="start.html" onSubmit="return validaFormulario()">
+						<label for="atualsenha" class="usuario">Senha Atual:</label>
+						<input type="password" name="SenhaAtual" id="atualsenha" class="usuario" />
+						<label for="novasenha" class="usuario">Nova Senha:</label>
+						<input type="password" name="NovaSenha" id="novasenha" class="usuario" />
+						<label for="confsenha" class="usuario">Confirma Senha:</label>
+						<input type="password" name="ConfirmaSenha" id="confsenha" class="usuario" /><br />
+						<input type="submit" name="Alterar" id="alterar" class="btn-usuario" value="Alterar" /> &nbsp 
+						<input type="button" name="Voltar" id="voltar" class="btn-usuario" value="Voltar" onclick="location. href='home.html'"/>
+					</form>
+					<form id="form3" class="form" method="post" action="start.html" onSubmit="return validaFormulario()">
+						<br />
+						<input type="submit" name="Excluir" id="excluir" class="btn-usuario" value="Excluir" /> &nbsp 
+						<input type="button" name="Voltar" id="voltar" class="btn-usuario" value="Voltar" onclick="location. href='home.html'"/>
+					</form>
+				</div>
+			</div>
+			<div id="footer">
+				<small>Agenda MS - 2018</small><br />
+				<small>Desenvolvido por: Marcos Willian de Souza</small>
+			</div>
+		</div>
+	</body>
+</html>
